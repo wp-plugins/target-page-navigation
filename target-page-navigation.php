@@ -2,11 +2,11 @@
 /*
 Plugin Name: Target Page Navigation
 Plugin URI: http://www.siterighter.com
-Description: This plugin adds a new sidebox (only available on the Add/Edit page sections) from which the author can configure the scope of the wp_list_navtype_pages() function and the edited/created page, wp_list_navtype_pages function supports the same parameters wp_list_pages function does, but it also adds support for the new "navigation_type" parameter. Possible values are: wp_list_pages(navigation_type = 'Super' || 'Head' || 'Side' || 'Page' || 'Foot').Updated to use with WordPress 2.5.1 
+Description: This plugin adds a new optoin (only available on the Add/Edit page sections) that enables the author to assign the page to one of 4 navigation types(Super, Head, Side, Page, Foot) to be used in a new function (wp_list_navtype_pages), that will replace the wp_list_pages() function.
 Author: siteRighter
 Version: 0.1.1
 Author URI: http://www.siteRighter.com
-*/ 
+*/
 
 /*
 
