@@ -3,14 +3,16 @@ Contributors: emjayoh, onewebsite, mikeolaski
 Donate link: http://siteRighter.com/
 Tags: Navigation, Page, Menu
 Requires at least: 2.1
-Tested up to: 2.6.3
+Tested up to: 2.7
 Stable tag: 0.0.1
 
 Allows user to assign a Page to a particular navigation object such as Super, Head, Sub, Side, or Foot navigation
 
 == Description ==
 
-This plugin adds a new sidebox (only available on the Add/Edit page sections) from which the author can configure the scope of the wp_list_navtype_pages() function and the edited/created page, wp_list_navtype_pages function supports the same parameters wp_list_pages function does, but it also adds support for the new "navigation_type" parameter. Possible values are: wp_list_pages(navigation_type = 'Super' || 'Head' || 'Side' || 'Page' || 'Foot')
+This plugin adds a new optoin (only available on the Add/Edit page sections) that enables the author to assign the page to one of 4 navigation types(Super, Head, Side, Page, Foot) to be used in a new function (wp_list_navtype_pages), that will replace the wp_list_pages() function.
+
+All the same parameters are acceptable, and we have added one new parameter that sets the navigation type navigationtype= "super" || "head" || "side" || "page" || "foot"
 
 == Installation ==
 
@@ -23,4 +25,4 @@ This plugin adds a new sidebox (only available on the Add/Edit page sections) fr
 
 = Does this plugin work in 2.7 =
 
-Not yet, I haven't had time to update it. If anyone wants to contribute please let me know.
+Yes it does
