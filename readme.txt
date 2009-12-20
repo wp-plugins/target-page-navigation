@@ -3,8 +3,8 @@ Contributors: emjayoh, onewebsite, mikeolaski
 Donate link: http://siteRighter.com/
 Tags: Navigation, Page, Menu
 Requires at least: 2.1
-Tested up to: 2.7
-Stable tag: 0.0.1
+Tested up to: 2.9
+Stable tag: 0.2
 
 Allows user to assign a Page to a particular navigation object such as Super, Head, Sub, Side, or Foot navigation
 
@@ -23,6 +23,6 @@ All the same parameters are acceptable, and we have added one new parameter that
 
 == Frequently Asked Questions ==
 
-= Does this plugin work in 2.7 =
+= Does this plugin work in 2.9 =
 
 Yes it does
