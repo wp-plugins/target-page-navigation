@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: emjayoh, onewebsite, mikeolaski
-Donate link: http://siteRighter.com/
+Donate link: http://mikeolaski.com/target-page-navigation-download
 Tags: Navigation, Page, Menu
 Requires at least: 2.1
 Tested up to: 2.9
