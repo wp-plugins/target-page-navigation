@@ -5,7 +5,7 @@ Plugin URI: http://mikeolaski.com/target-page-navigation
 Description: This plugin adds a new optoin (only available on the Add/Edit page sections) that enables the author to assign the page to one of 4 navigation types(Super, Head, Side, Page, Foot) to be used in a new function (wp_list_navtype_pages), that will replace the wp_list_pages() function.
 Author: Mike Olaski
 Contributors: Aarun Harun
-Version: 0.2
+Version: 0.2.1
 Author URI: http://mikeolaski.com
 */
 
@@ -49,11 +49,21 @@ global $TPN,$wpdb;
 
 function wp_list_navtype_pages($args = '') {
 global $TPN;
-	$TPN = strtolower($args["navigation_type"]);
+	if ( is_array($args) )
+		$r = &$args;
+	else
+		parse_str($args, $r);
+
+	$defaults = array('depth' => 0, 'show_date' => '', 'date_format' => get_option('date_format'),
+		'child_of' => 0, 'exclude' => '', 'title_li' => __('Pages'), 'echo' => 1, 'authors' => '');
+	$r = array_merge($defaults, $r);
+
+	$TPN = strtolower($r['navigation_type']);
+
 	add_filter('get_pages', 'filter_get_pages');
 
 	// Query pages.
-	$pages = wp_list_pages($args);
+	$pages = wp_list_pages($r);
 
 	remove_filter('get_pages', 'filter_get_pages');
 	unset($TPN);
