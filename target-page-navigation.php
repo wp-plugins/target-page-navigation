@@ -1,17 +1,16 @@
 <?php
 /*
 Plugin Name: Target Page Navigation
-Plugin URI: http://mikeolaski.com/target-page-navigation
+Plugin URI: http://www.siterighter.com
 Description: This plugin adds a new optoin (only available on the Add/Edit page sections) that enables the author to assign the page to one of 4 navigation types(Super, Head, Side, Page, Foot) to be used in a new function (wp_list_navtype_pages), that will replace the wp_list_pages() function.
-Author: Mike Olaski
-Contributors: Aarun Harun
+Author: siteRighter
 Version: 0.2.1
-Author URI: http://mikeolaski.com
+Author URI: http://www.siteRighter.com
 */
 
 /*
 
-Copyright 2007 Mike Olaski
+Copyright 2007 Mike Olaski (mjo@emjayoh.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
